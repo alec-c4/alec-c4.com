@@ -33,3 +33,9 @@ pnpm-debug.log*
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+# IDE-specific files
+.idea
+
+# hosting-specific files
+.vercel
