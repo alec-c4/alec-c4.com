@@ -73,7 +73,7 @@ If you want to test error pages locally, you need to set following option in you
   config.consider_all_requests_local = false
 ```
 
-Almost perfect, but I'd like to propose you some improvements. Let's look back to  `config/environments/development.rb` and to some changes
+Almost perfect, but I'd like to propose you some improvements. Let's look back to `config/environments/development.rb` and to some changes
 
 ```ruby
   # Show full error reports.
@@ -95,7 +95,7 @@ namespace :dev do
 end
 ```
 
-Every time you need to enable custom error pages locally, just run in console 
+Every time you need to enable custom error pages locally, just run in console
 
 ```bash
 $ rake dev:errors

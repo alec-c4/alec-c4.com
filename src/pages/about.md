@@ -6,7 +6,6 @@ layout: ../layouts/AboutLayout.astro
   <img src="/assets/me.jpg" class="sm:w-full mx-auto" alt="coding dev illustration">
 </div>
 
-
 > Peter Quill : You look like Mary Poppins.
 >
 > Yondu : Is he cool?
