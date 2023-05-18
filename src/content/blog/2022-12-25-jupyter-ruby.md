@@ -6,7 +6,7 @@ postSlug: 2022-12-25-jupyter-ruby
 featured: true
 tags:
   - ruby
-description: Running ruby on jupyter notebooks
+description: How to run ruby code in jupyter notebooks
 ---
 
 Missed me? Don’t worry - I’m back, and I’d like to share an awesome thing I’ve found today.

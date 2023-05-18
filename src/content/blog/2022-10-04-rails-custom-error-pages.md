@@ -7,7 +7,7 @@ featured: false
 tags:
   - ruby on rails
   - ruby
-description: Custom error pages in rails applications
+description: How to create custom error pages to preview them in development mode
 ---
 
 Ruby on rails is shipped with html-based error pages, but with some easy steps you can create your own erb-based pages. So, let's do it.
