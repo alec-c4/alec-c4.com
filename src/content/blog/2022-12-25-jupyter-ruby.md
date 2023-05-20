@@ -66,7 +66,7 @@ Let's check our installation
 
 Now you can open your browser and check - it should work now.
 
-![image info](/blog/2022-12-25-jupyter-ruby/1.png)
+![](/blog/2022-12-25-jupyter-ruby/1.png)
 
 Well, let's add support for ruby. Install `iruby` gem
 
@@ -85,10 +85,10 @@ Then add it to Jupyter
 
 That's it. Just restart Jupyter, and now you can run ruby code.
 
-![image info](/blog/2022-12-25-jupyter-ruby/2.png)
+![](/blog/2022-12-25-jupyter-ruby/2.png)
 
 Let's try to write something in ruby
 
-![image info](/blog/2022-12-25-jupyter-ruby/3.png)
+![](/blog/2022-12-25-jupyter-ruby/3.png)
 
 Well, it works! Awesome :)
