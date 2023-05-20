@@ -78,7 +78,7 @@ const socialImageURL = new URL(
     <script is:inline src="/toggle-theme.js"></script>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/partytown">
+    <script is:inline type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] =
           m[i] ||
@@ -103,7 +103,6 @@ const socialImageURL = new URL(
         "https://mc.yandex.ru/metrika/tag.js",
         "ym"
       );
-
       ym(90658767, "init", {
         clickmap: true,
         trackLinks: true,
@@ -124,11 +123,12 @@ const socialImageURL = new URL(
 
     <!-- Google tag (gtag.js) -->
     <script
-      type="text/partytown"
+      is:inline
+      type="text/javascript"
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-K9FVBB6WES"
     ></script>
-    <script type="text/partytown">
+    <script is:inline type="text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
