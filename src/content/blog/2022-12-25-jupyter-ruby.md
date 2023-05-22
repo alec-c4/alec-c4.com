@@ -3,7 +3,7 @@ author: Alexey Poimtsev
 pubDatetime: 2022-12-25T15:57:52.737Z
 title: Running ruby on jupyter notebooks
 postSlug: 2022-12-25-jupyter-ruby
-featured: true
+featured: false
 tags:
   - ruby
 description: How to run ruby code in jupyter notebooks
