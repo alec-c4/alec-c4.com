@@ -14,6 +14,7 @@ description: My collection of grants and discounts for early-stage companies
 Here is a curated list of grants and perks for early-stage companies. If you have something to add to this list - please let me know.
 
 - **Amazon AWS** https://aws.amazon.com/activate/ - up to $100k in AWS credits to cover your AWS service usage
+- **Cloudflare** https://www.cloudflare.com/forstartups/ - one year of free Cloudflare services
 - **DigitalOcean Hatch Program** https://www.digitalocean.com/hatch - 12 months of infrastructure credit
 - **Google for Startups Cloud Program** https://cloud.google.com/startup/apply - up to $200,000 in cloud credits over 2 years
 - **Intercom** https://www.intercom.com/early-stage - 10 Seats of Support Pro, 5 Seats (1,000 People Reached) of Engage Pro and Product Tours add-on for 1,000 Guided People for $65/month
