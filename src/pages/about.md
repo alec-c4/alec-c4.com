@@ -32,7 +32,6 @@ You can also contact me directly using following links:
 
 ## Social networks
 
-- [LinkedIn](https://linkedin.com/in/apoimtsev)
 - [Quora](https://www.quora.com/profile/Alexey-Poimtsev)
 - [Reddit](https://www.reddit.com/user/alec-c4)
 - [StackOverflow](https://stackoverflow.com/users/143511/alexey-poimtsev)
