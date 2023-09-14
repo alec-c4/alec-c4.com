@@ -10,7 +10,7 @@ tags:
 description: How to create templates for rails g scaffold command - controllers, views, tests
 ---
 
-Starting from rails7, code team have changed scaffold templates and from my point of view - it is not the best change they have done. Every time I run `rails g scaffold Post title:string body:text` or something like this I need to change views, controller and specs to match my needs. And today I'll show you how to customize your templates to reduce time you spend to change generated code.
+Starting from rails7, core team have changed scaffold templates and from my point of view - it is not the best change they have done. Every time I run `rails g scaffold Post title:string body:text` or something like this I need to change views, controller and specs to match my needs. And today I'll show you how to customize your templates to reduce time you spend to change generated code.
 
 Firstly, let me show you where those templates are located. If you check links below - you'll see a source code of standard rails templates for [views](https://github.com/rails/rails/tree/main/railties/lib/rails/generators/erb/scaffold/templates) and [controllers](https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/scaffold_controller/templates/controller.rb.tt).
 
