@@ -50,4 +50,5 @@ Here are some key points I'd like to emphasize:
 - When your entire day is planned out, you don't have to think about what to do next. Having a clear plan provides a sense of stability.
 - If you happen to miss a particular task (e.g., meditation or a workout due to an early morning call from family or friends), don't stress about it. We're all human.
 - Try to avoid continuous news and social media consumption (unless it's part of your job). Dedicate a short time slot each day, no more than 30 minutes, for catching up on these platforms.
-- I hope this relatively simple approach helps you steer clear of depression and burnout.
+
+I hope this relatively simple approach helps you steer clear of depression and burnout.
