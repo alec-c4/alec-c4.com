@@ -4,24 +4,13 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
-import { SITE } from "./src/config";
-
-import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
+  site: "https://alec-c4.com/", // replace this with your deployed domain
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    partytown({
-      // Adds dataLayer.push as a forwarding-event.
-      config: {
-        forward: ["dataLayer.push"],
-      },
+      applyBaseStyles: false,
     }),
     react(),
     sitemap(),
@@ -47,4 +36,5 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
+  scopedStyleStrategy: "where",
 });

@@ -1,0 +1,15 @@
+.hireme {
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: #484646;
+  color: aliceblue;
+  border-radius: 0.5rem;
+}
+
+.hireme a {
+  @apply underline decoration-wavy underline-offset-4;
+}
