@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "I'm Mary Poppins, y'all!",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 10,
+  postPerPage: 5,
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
