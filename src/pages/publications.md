@@ -1,6 +1,6 @@
 ---
 layout: "../layouts/PublicationsLayout.astro"
-title: Publications
+title: Publications and Interviews
 ---
 
 ## Video interviews
