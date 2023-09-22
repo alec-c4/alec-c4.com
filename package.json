@@ -1,6 +1,6 @@
 {
   "name": "alec-c4",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
@@ -23,7 +23,7 @@
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
-    "satori": "^0.10.7",
+    "satori": "^0.10.8",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
   },
@@ -39,7 +39,7 @@
     "astro-eslint-parser": "^0.15.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "eslint-plugin-astro": "^0.29.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
