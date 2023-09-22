@@ -17,9 +17,9 @@ description: How to create GraphQL authentication from scratch without devise ge
 
 ## Project preparation
 
-Firstly, let's create our rails application. Of course - you can use an `--api` key to skip adding asset pipeline to your project, but I'll use basic template because I need [graphiql-rails](https://github.com/rmosolgo/graphiql -rails) gem.
+Firstly, let's create our rails application. Of course - you can use an `--api` key to skip adding asset pipeline to your project, but I'll use basic template because I need [graphiql-rails](https://github.com/rmosolgo/graphiql-rails) gem.
 
-```
+```bash
 $ rails new graphql_from_scratch --database=postgresql --skip-test --skip-system-test -j bun
 $ cd graphql_from_scratch/
 $ rails db:create && rails db:migrate
