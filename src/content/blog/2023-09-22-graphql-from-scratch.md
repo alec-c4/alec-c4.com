@@ -10,7 +10,7 @@ tags:
   - ruby
   - API
   - GraphQL
-description: How to create GraphQL authentication from scratch without devise gem
+description: How to create GraphQL authentication from scratch without devise gem. Part 1
 ---
 
 [Devise](https://github.com/heartcombo/devise) is an awesome gem to add authentication for your rails application, but it may me a bit overkill solution if you are going to develop REST or GraphQL API for your SPA or mobile application. Today I'll show you how to create GraphQL API without devise. I'll use some methods that [become available](https://rubyonrails.org/2023/9/13/Rails-7-1-0-beta-1-has-been-released) in **rails 7.1.0.beta1**, so please install this or higher version.
