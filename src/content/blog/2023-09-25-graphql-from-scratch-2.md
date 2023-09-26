@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2023-09-25
 title: "Rails GraphQL authentication from scratch #2"
-postSlug: 2023-09-22-graphql-from-scratch-2
+postSlug: 2023-09-25-graphql-from-scratch-2
 featured: false
 draft: false
 tags:
