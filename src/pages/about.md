@@ -3,14 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: About me
 ---
 
-```
-Peter Quill : You look like Mary Poppins.
-Yondu : Is he cool?
-Peter Quill : Hell yeah, he's cool.
-Yondu : I'm Mary Poppins, y'all!
-
-Guardians of the Galaxy: Vol. 2
-```
+> Peter Quill : You look like Mary Poppins.  
+> Yondu : Is he cool?  
+> Peter Quill : Hell yeah, he's cool.  
+> Yondu : I'm Mary Poppins, y'all!
+>
+> Guardians of the Galaxy: Vol. 2
 
 <div>
   <img src="/assets/me.jpg" class="sm:w-full mx-auto" alt="coding dev illustration">
