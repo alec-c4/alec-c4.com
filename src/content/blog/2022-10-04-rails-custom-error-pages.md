@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2022-10-04
 title: Custom error pages in rails applications
-postSlug: 2022-10-04-rails-custom-error-pages
+slug: 2022-10-04-rails-custom-error-pages
 featured: false
 tags:
   - ruby on rails

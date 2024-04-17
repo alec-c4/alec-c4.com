@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2023-09-14T23:24:25+03:00
 title: How do I fight with burnout
-postSlug: 2023-09-14-no-burnout
+slug: 2023-09-14-no-burnout
 featured: false
 draft: false
 tags:

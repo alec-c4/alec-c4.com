@@ -4,6 +4,7 @@ pubDatetime: 2023-05-22T23:24:25+03:00
 title: Perks, grants and discounts for startups
 featured: true
 draft: false
+slug: perks-grants-and-discounts-for-startups
 tags:
   - startup
   - grants

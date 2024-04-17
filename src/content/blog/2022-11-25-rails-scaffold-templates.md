@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2022-11-25
 title: Rails scaffold templates
-postSlug: 2022-11-25-rails-scaffold-templates
+slug: 2022-11-25-rails-scaffold-templates
 featured: false
 tags:
   - ruby on rails

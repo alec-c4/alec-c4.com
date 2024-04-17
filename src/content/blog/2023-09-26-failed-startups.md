@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2023-09-26
 title: "Failed startups and learned lessons"
-postSlug: 2023-09-26-failed-startups
+slug: 2023-09-26-failed-startups
 featured: false
 draft: false
 tags:
