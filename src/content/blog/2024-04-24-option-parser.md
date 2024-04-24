@@ -96,4 +96,4 @@ else
 end
 ```
 
-Every solution is simple and easy to implement without any additional library, but `OptionParser` lokks more compact and readable, isn't it?
+Every solution is simple and easy to implement without any additional library, but `OptionParser` code looks more compact and readable, isn't it?
