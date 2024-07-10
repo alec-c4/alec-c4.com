@@ -106,4 +106,24 @@ ActiveRecord::Base.connection.execute("select * from mobility_text_translations"
 end
 ```
 
+Latest step - now you can drop unneccessary tables and columns
+
+```sh
+$ rails g migration DropMobilityTablesAndUnusedColumns
+```
+
+```ruby
+class DropMobilityTablesAndUnusedColumns < ActiveRecord::Migration[7.1]
+  def change
+    drop_table :mobility_string_translations
+    drop_table :mobility_text_translations
+
+    # if you haven't removed those columns before
+    remove_column :tags, :title
+    remove_column :interests, :title
+    remove_column :countries, :title
+  end
+end
+```
+
 Easy, huh? Hope this recipe will be useful for you.
