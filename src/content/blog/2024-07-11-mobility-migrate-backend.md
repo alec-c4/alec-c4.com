@@ -97,15 +97,11 @@ end
 Then we will write some code to copy data. You can use it in the rake task, new migration or console - as you wish.
 
 ```ruby
-string_translations = ActiveRecord::Base.connection.execute("select * from mobility_string_translations")
-
-text_translations = ActiveRecord::Base.connection.execute("select * from mobility_text_translations")
-
-string_translations.each do |tr|
+ActiveRecord::Base.connection.execute("select * from mobility_string_translations").each do |tr|
   tr["translatable_type"].constantize.find(tr["translatable_id"]).update("#{tr["key"]}_#{tr["locale"]}": tr["value"])
 end
 
-text_translations.each do |tr|
+ActiveRecord::Base.connection.execute("select * from mobility_text_translations").each do |tr|
   tr["translatable_type"].constantize.find(tr["translatable_id"]).update("#{tr["key"]}_#{tr["locale"]}": tr["value"])
 end
 ```
