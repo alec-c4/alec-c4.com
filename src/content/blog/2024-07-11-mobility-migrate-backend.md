@@ -1,7 +1,7 @@
 ---
 author: Alexey Poimtsev
 pubDatetime: 2024-07-11
-title: "How to migrate backend in mobility gem"
+title: "How to migrate from KeyValue to Container backend in mobility gem"
 slug: 2024-07-11-mobility-migrate-backends
 featured: false
 draft: false
@@ -9,7 +9,7 @@ tags:
   - ruby on rails
   - ruby
   - rubygems
-description: How to change backend in mobility gem from one to another
+description: How to change KeyValue to Container backend in mobility gem
 ---
 
 One of the tasks I'm currently working on is migration from [KeyValue backend](https://github.com/shioyama/mobility/wiki/KeyValue-Backend) to [Container backend](https://github.com/shioyama/mobility/wiki/Container-Backend) in the project powered with [mobility](https://github.com/shioyama/mobility/) gem. Today we'll try to perform such migration. Of course - you can adapt code below to migrate between other backends.
