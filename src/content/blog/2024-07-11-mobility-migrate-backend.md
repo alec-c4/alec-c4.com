@@ -98,11 +98,11 @@ Then we will write some code to copy data. You can use it in the rake task, new 
 
 ```ruby
 ActiveRecord::Base.connection.execute("select * from mobility_string_translations").each do |tr|
-  tr["translatable_type"].constantize.find(tr["translatable_id"]).update("#{tr["key"]}_#{tr["locale"]}": tr["value"])
+  tr["translatable_type"].constantize.find(tr["translatable_id"]).update!("#{tr["key"]}_#{tr["locale"]}": tr["value"])
 end
 
 ActiveRecord::Base.connection.execute("select * from mobility_text_translations").each do |tr|
-  tr["translatable_type"].constantize.find(tr["translatable_id"]).update("#{tr["key"]}_#{tr["locale"]}": tr["value"])
+  tr["translatable_type"].constantize.find(tr["translatable_id"]).update!("#{tr["key"]}_#{tr["locale"]}": tr["value"])
 end
 ```
 
