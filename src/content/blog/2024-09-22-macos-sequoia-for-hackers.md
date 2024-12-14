@@ -136,4 +136,4 @@ To prevent saving notes which isn't synced with iCloud, I do recommend to disabl
 
 ![Notes](/blog/macos-sequoia/notes-01.png)
 
-We've done with basic system settings, so we can proceed to part 2 to set up our tooling.
+We've done with basic system settings, so we can proceed to [part 2](/posts/2024-12-14-macos-setup-for-hackers-2) to set up our tooling.
