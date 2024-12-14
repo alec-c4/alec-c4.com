@@ -24,7 +24,7 @@ To address this issue, I've successfully adopted an approach that I'd like to sh
 
 I've meticulously scheduled my day using the Reminders app on my iPhone. It looks something like this:
 
-```
+```text
 8:00 AM - Wake up.
 8:10 AM - Brush teeth and wash up.
 8:15 AM - Drink a glass of water (since we can't replenish our body's fluids at night).

@@ -20,7 +20,7 @@ Welcome back to my series how to develop GraphQL API for rails applications from
 To authenticate our users, we need to add [jwt gem](https://github.com/jwt/ruby-jwt) to our `Gemfile`
 
 ```bash
-$ bundle add jwt
+bundle add jwt
 ```
 
 and create `app/models/auth_token.rb`
@@ -50,8 +50,8 @@ How does it work. We use `jwt_secret` which is stored in rails credentials to cr
 Let's create our `jwt_secret` for development and test environments
 
 ```bash
-$ rails credentials:edit --environment=development
-$ rails credentials:edit --environment=test
+rails credentials:edit --environment=development
+rails credentials:edit --environment=test
 ```
 
 and add the following line
@@ -63,7 +63,7 @@ jwt_secret: "secret"
 Btw, don't forget to generate secure keys using
 
 ```bash
-$ rails secret
+rails secret
 ```
 
 Let's test it out.
@@ -381,7 +381,7 @@ end
 Now, with
 
 ```bash
-$ rake graphql:dump_schema
+rake graphql:dump_schema
 ```
 
 I'll have updated schema in `app/graphql/schema.graphql` and specs will remind me to update it.

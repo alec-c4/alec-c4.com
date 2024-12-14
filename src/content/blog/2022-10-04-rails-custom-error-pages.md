@@ -15,7 +15,7 @@ Ruby on rails is shipped with html-based error pages, but with some easy steps y
 Firstly you need to create controller, views and routes for your pages.
 
 ```bash
-$ rails g controller errors not_found unprocessable unacceptable internal_server_error
+rails g controller errors not_found unprocessable unacceptable internal_server_error
 ```
 
 This generator will create at least following files - `app/controllers/errors_controller.rb`, `app/views/errors` directory and add routes to your `config/routes.rb`
@@ -98,7 +98,7 @@ end
 Every time you need to enable custom error pages locally, just run in console
 
 ```bash
-$ rake dev:errors
+rake dev:errors
 ```
 
 then restart your server, and you'll switch error pages from default to custom and back.

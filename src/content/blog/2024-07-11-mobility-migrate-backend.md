@@ -68,7 +68,7 @@ As you see - there are only strings, but no text translations, so let's move on.
 Next step - let's add required columns to our tables
 
 ```sh
-$ rails g migration MigrateToContainerMobilityBackend
+rails g migration MigrateToContainerMobilityBackend
 ```
 
 ```ruby
@@ -109,7 +109,7 @@ end
 Latest step - now you can drop unneccessary tables and columns
 
 ```sh
-$ rails g migration DropMobilityTablesAndUnusedColumns
+rails g migration DropMobilityTablesAndUnusedColumns
 ```
 
 ```ruby

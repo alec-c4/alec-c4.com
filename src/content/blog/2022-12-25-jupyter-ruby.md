@@ -19,7 +19,7 @@ Firstly, you need to install Jupyter notebooks if it isn't installed yet on your
 
 Install [python 3](https://www.python.org/). Let's check our versions
 
-```
+```bash
 ❯ python3 --version
 Python 3.10.9
 ❯ pip3 --version
@@ -28,14 +28,14 @@ pip 22.3.1 from /Users/alec/Library/Python/3.10/lib/python/site-packages/pip (py
 
 Looks good. You maybe need to update installed packages.
 
-```
+```bash
 ❯ pip3 install --upgrade pip
 Requirement already satisfied: pip in ./Library/Python/3.10/lib/python/site-packages (22.3.1)
 ```
 
 Then install Jupyter
 
-```
+```bash
 ❯ pip3 install jupyter
 Requirement already satisfied: jupyter in /usr/local/lib/python3.10/site-packages (1.0.0)
 Requirement already satisfied: jupyter-console in /usr/local/lib/python3.10/site-packages (from jupyter) (6.4.4)
@@ -48,7 +48,7 @@ Requirement already satisfied: ipywidgets in /usr/local/lib/python3.10/site-pack
 
 Let's check our installation
 
-```
+```bash
 ❯ jupyter notebook
 [I 22:51:29.176 NotebookApp] Serving notebooks from local directory: /Users/alec
 [I 22:51:29.176 NotebookApp] Jupyter Notebook 6.5.2 is running at:
@@ -79,7 +79,7 @@ Successfully installed iruby-0.7.4
 
 Then add it to Jupyter
 
-```
+```bash
 ❯ iruby register --force
 ```
 

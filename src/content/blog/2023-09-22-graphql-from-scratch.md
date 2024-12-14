@@ -20,9 +20,9 @@ description: How to create GraphQL authentication from scratch without devise ge
 Firstly, let's create our rails application. Of course - you can use an `--api` key to skip adding asset pipeline to your project, but I'll use basic template because I need [graphiql-rails](https://github.com/rmosolgo/graphiql-rails) gem.
 
 ```bash
-$ rails new graphql_from_scratch --database=postgresql --skip-test --skip-system-test -j bun
-$ cd graphql_from_scratch/
-$ rails db:create && rails db:migrate
+rails new graphql_from_scratch --database=postgresql --skip-test --skip-system-test -j bun
+cd graphql_from_scratch/
+rails db:create && rails db:migrate
 ```
 
 I prefer to use UUID, so I'll create the following migration with `rails g migration EnableUuidPsqlExtension`
@@ -39,8 +39,8 @@ end
 Also, I'll add some test-relates gems:
 
 ```bash
-$ bundle add rspec-rails shoulda-matchers factory_bot_rails ffaker database_cleaner database_cleaner-active_record email_spec --group "development, test"
-$ rails g rspec:install
+bundle add rspec-rails shoulda-matchers factory_bot_rails ffaker database_cleaner database_cleaner-active_record email_spec --group "development, test"
+rails g rspec:install
 ```
 
 Then I'll create `config/initializers/generators.rb` file
@@ -119,9 +119,9 @@ end
 Next, we need to add graphql to our Gemfile
 
 ```bash
-$ bundle add graphql
-$ bundle add graphiql-rails --group "development"
-$ rails g graphql:install
+bundle add graphql
+bundle add graphiql-rails --group "development"
+rails g graphql:install
 ```
 
 You can start our rails server with `./bin/dev` and open [http://localhost:3000/graphiql](http://localhost:3000/graphiql) to test our API with following query
@@ -175,7 +175,7 @@ Well, now we can start working on our API.
 Let's create our User model
 
 ```bash
-$ rails g model User first_name last_name email password_digest
+rails g model User first_name last_name email password_digest
 
 ```
 

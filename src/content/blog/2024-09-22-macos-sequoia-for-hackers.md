@@ -112,6 +112,10 @@ Some tweaks for Safari. I recommend to disable option to "open safe files", ...
 
 ![Safari](/blog/macos-sequoia/safari-02.png)
 
+One more useful tweak for Safari. To prevent accidental quit from the browser - you can configure another hotket from the system settings. Go to the System settings -> Keyboard -> Keyboard Shortcuts. Then choose Safari, then `Quit Safari` and your own hotkey. Voila!
+
+![Safari](/blog/macos-sequoia/safari-03.png)
+
 ## Mail
 
 Next stop - Mail.app. Let's enable the option to resend email in case if SMTP server isn't available.
