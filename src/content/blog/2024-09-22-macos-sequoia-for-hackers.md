@@ -25,7 +25,7 @@ It is useful, especially if you use a MacBook with notch.
 
 ![Control center](/blog/macos-sequoia/system-01.png)
 
-Next option we need to change - desktop and docker preferences. We've set dock small as possible, enabled magnification on hover and auto-hide. Also, applications will minimize to the application icon, but not to create extra icons in dock on minimize. To keep desktop looks clean - we've unchecked check-boxes "Show items on desktop and stage manager".
+Next option we need to change - desktop and dock preferences. We've set dock small as possible, enabled magnification on hover and auto-hide. Also, applications will minimize to the application icon, but not to create extra icons in dock on minimize. To keep desktop looks clean - we've unchecked check-boxes "Show items on desktop and stage manager".
 
 ![Desktop and dock](/blog/macos-sequoia/system-02.png)
 
