@@ -2,7 +2,7 @@
 author: Alexey Poimtsev
 pubDatetime: 2024-12-14
 title: "macOS setup for hackers and power users (macOS Sequoia edition) #2"
-slug: 2024-12-14-macos-setup-for-hackers-2
+slug: 2024-12-14-macos-sequoia-for-hackers-2
 featured: false
 draft: false
 tags:
