@@ -26,7 +26,7 @@ Imagine, we need to pass SuperPlatform public API key from ENV variable or from 
 <%= tag.meta name: "superplatform-key", content: ENV.fetch("superplatform_api_key") %>
 ```
 
-If you need to pass this variable from specific pages then you can define `yield` if your layout with
+If you need to pass this variable from specific pages then you can define `yield` in your layout with
 
 ```erb
 <%= yield :api_keys %>
@@ -40,7 +40,7 @@ and pass required keys using
 <% end %>
 ```
 
-Well, we got API keys in our view so we can access those keys from javascript code using
+Well, we got API keys in our view so we can access those keys from JavaScript code using
 
 ```javascript
 const superplatform_key = document
@@ -49,4 +49,4 @@ const superplatform_key = document
 console.log("superplatform_key", superplatform_key);
 ```
 
-Voila!
+Voilà!
