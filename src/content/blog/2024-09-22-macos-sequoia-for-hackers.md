@@ -92,7 +92,7 @@ Let's do some tweaks for Finder. You may need to show some places in the sidebar
 
 ![Finder](/blog/macos-sequoia/finder-01.png)
 
-... show filename extensions, automatically empty trash ...
+... show filename extensions, automatically empty trash, start search in current folder ...
 
 ![Finder](/blog/macos-sequoia/finder-02.png)
 
