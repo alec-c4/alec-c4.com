@@ -1,7 +1,6 @@
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
@@ -16,26 +15,26 @@ export const LOCALE = {
 export const SOCIALS = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: ` ${SITE.title} on Github`,
+    href: "https://github.com/alec-c4",
+    linkTitle: ` ${SITE.author} on Github`,
     icon: IconGitHub,
   },
   {
     name: "X",
-    href: "https://x.com/username",
-    linkTitle: `${SITE.title} on X`,
+    href: "https://x.com/alec_c4",
+    linkTitle: `${SITE.author} on X`,
     icon: IconBrandX,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
+    name: "Telegram",
+    href: "https://t.me/alec_c4",
+    linkTitle: `${SITE.author} on Telegram`,
+    icon: IconTelegram,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
+    href: "mailto:alec@alec-c4.com",
+    linkTitle: `Send an email to ${SITE.author}`,
     icon: IconMail,
   },
 ] as const;

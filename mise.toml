@@ -1,0 +1,11 @@
+[tasks.update]
+description = "Update packages"
+run = "pnpm up"
+
+[tasks.install]
+description = "Install packages"
+run = "pnpm install"
+
+[tasks.dev]
+description = "Run development server"
+run = "pnpm dev"
