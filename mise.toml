@@ -9,3 +9,7 @@ run = "pnpm install"
 [tasks.dev]
 description = "Run development server"
 run = "pnpm dev"
+
+[tasks.prepare]
+description = "Prepare local environment"
+run = ["brew install vercel-cli", "vercel"]
