@@ -3,6 +3,8 @@ import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/config";
 import { LOCALE } from "@/constants";
 import "@/styles/global.css";
+import GTMHead from "@/components/GTMHead.astro";
+import GTMBody from "@/components/GTMBody.astro";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -132,8 +134,12 @@ const structuredData = {
     <ClientRouter />
 
     <script is:inline src="/toggle-theme.js" async></script>
+
+    <GTMHead />
   </head>
   <body>
+    <GTMBody />
+
     <slot />
   </body>
 </html>

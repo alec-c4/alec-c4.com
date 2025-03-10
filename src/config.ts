@@ -4,10 +4,10 @@ export const SITE = {
   profile: "https://alec-c4.com/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "I'm Mary Poppins, y'all!",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "alec-c4.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 4,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   showBackButton: true, // show back button in post detail
