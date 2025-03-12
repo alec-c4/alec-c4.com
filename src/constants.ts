@@ -31,7 +31,7 @@ export const SOCIALS = [
     linkTitle: `${SITE.author} on Telegram`,
     icon: IconTelegram,
   },
-    {
+  {
     name: "WhatsApp",
     href: "https://wa.me/79268891632",
     linkTitle: `${SITE.author} on WhatsApp`,

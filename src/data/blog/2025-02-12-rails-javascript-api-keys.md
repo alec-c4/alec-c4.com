@@ -21,6 +21,7 @@ Imagine, we need to pass SuperPlatform public API key from ENV variable or from 
 ```erb
 <%= tag.meta name: "superplatform-key", content: Rails.application.credentials.superplatform[:api_key] %>
 ```
+
 or
 
 ```erb

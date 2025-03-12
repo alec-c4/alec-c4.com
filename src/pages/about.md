@@ -3,12 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Quote from *Guardians of the Galaxy: Vol. 2*:
+Quote from _Guardians of the Galaxy: Vol. 2_:
 
->Peter Quill : You look like Mary Poppins.<br>
->Yondu : Is he cool?<br>
->Peter Quill : Hell yeah, he's cool.<br>
->Yondu : I'm Mary Poppins, y'all!
+> Peter Quill : You look like Mary Poppins.<br>
+> Yondu : Is he cool?<br>
+> Peter Quill : Hell yeah, he's cool.<br>
+> Yondu : I'm Mary Poppins, y'all!
 
 I'm Alexey Poimtsev — technical director, entrepreneur, and software development expert. A passionate geek, as well as a loving father and husband, I started this blog to share my experience in engineering, product management, and business.
 
@@ -69,7 +69,6 @@ You can also contact me directly using following links:
 ### Faculty of Applied Mathematics: Information systems and software in the economy
 
 Saratov State University named after N.G.Chernyshevsky
-
 
 ## Publications
 
