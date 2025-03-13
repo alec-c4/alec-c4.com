@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://alec-c4.com/", // replace this with your deployed domain
   author: "Alexey Poimtsev",
   profile: "https://alec-c4.com/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Alexey Poimtsev, geek, digital punk, entrepreneur.",
   title: "I'm Mary Poppins, y'all!",
   ogImage: "alec-c4.jpg",
   lightAndDarkMode: true,

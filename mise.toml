@@ -13,3 +13,7 @@ run = "pnpm dev"
 [tasks.prepare]
 description = "Prepare local environment"
 run = ["brew install vercel-cli", "vercel"]
+
+[tasks.lint]
+description = "Run linter"
+run = ["pnpm lint", "pnpm format"]
