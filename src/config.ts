@@ -12,8 +12,9 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    url: "https://github.com/alec-c4/alec-c4.com/edit/master/src/data/blog/",
+    url: "https://github.com/alec-c4/alec-c4.com/edit/master/src/data/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
+  dynamicOgImage: true,
 } as const;

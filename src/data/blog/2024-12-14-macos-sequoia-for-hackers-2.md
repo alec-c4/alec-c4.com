@@ -1,6 +1,7 @@
 ---
 author: Alexey Poimtsev
 pubDatetime: 2024-12-14T15:45:29.000+03:00
+modDatetime: 2025-03-10T19:45:29.000+03:00
 title: "macOS setup for hackers and power users (macOS Sequoia edition) #2"
 slug: 2024-12-14-macos-sequoia-for-hackers-2
 featured: false
@@ -12,6 +13,8 @@ description: How to configure your MacBook if you're developer or advanced user
 ---
 
 After what feels like ages (seriously, sorry for the wait), we’re back with Part 2 of this epic guide to crafting a professional macOS configuration. This time, we’re diving into the must-have system and developer tools. Let’s geek out!
+
+## Table of contents
 
 ## Terminal application
 
@@ -25,6 +28,7 @@ For developers, the terminal is a second home—where projects come to life (and
 - [WezTerm](https://wezfurlong.org/wezterm/)
 - [tabby](https://tabby.sh)
 - [hyper](https://hyper.is/)
+- [ghostty](https://ghostty.org/)
 
 I’m partial to Warp and iTerm2, but every option here has its perks. Currently, Warp has my heart—it’s sleek, ridiculously fast, and fully customizable (with just a bit of elbow grease).
 
@@ -121,42 +125,41 @@ To supercharge your setup, create a Brewfile. It’s a one-stop list of all your
 Here’s a quick sample:
 
 ```ruby
-tap "oven-sh/bun"
-
 # Develop
 brew "act"
 brew "ansible"
-brew "bun"
+brew "ansible-lint"
 brew "fastlane"
 brew "gh"
-brew "go"
 brew "imagemagick"
+brew "just"
+brew "lazygit"
 brew "lefthook"
 brew "lnav"
+brew "mise"
 brew "neovim"
-brew "node"
+brew "nmap"
 brew "openjdk"
 brew "orbstack"
 brew "pgcli"
 brew "pinentry-mac"
-brew "pyenv"
-brew "python"
-brew "rbenv"
 brew "redis"
 brew "ripgrep"
+brew "vercel-cli"
 brew "vips"
-brew "yarn"
 
 # System
 brew "bat"
 brew "chezmoi"
 brew "jq"
+brew "fish"
 brew "ffmpeg"
 brew "gpg"
 brew "fzf"
 brew "lsd"
 brew "powerlevel10k"
 brew "rip2"
+brew "smimesign"
 brew "speedtest-cli"
 brew "ssh-copy-id"
 brew "tmpmail"
@@ -171,19 +174,23 @@ brew "zsh-syntax-highlighting"
 
 cask "1password-cli"
 cask "1password"
+cask "alcove"
 cask "alfred"
 cask "android-studio"
 cask "arc"
 cask "bartender"
 cask "chatgpt"
 cask "claude"
+cask "craft"
 cask "dropbox"
 cask "figma"
 cask "firefox"
 cask "flutter"
-cask "folx"
+cask "forklift"
+cask "ghostty"
 cask "github"
 cask "google-chrome"
+cask "handbrake"
 cask "imageoptim"
 cask "iina"
 cask "iterm2"
@@ -192,12 +199,14 @@ cask "keka"
 cask "microsoft-office"
 cask "monitorcontrol"
 cask "netnewswire"
+cask "one-switch"
 cask "pearcleaner"
 cask "postgres-unofficial"
 cask "shottr"
 cask "telegram"
 cask "textmate"
 cask "tower"
+cask "transmission"
 cask "typora"
 cask "updf"
 cask "visual-studio-code"
@@ -213,9 +222,9 @@ mas "LanguageTool", id: 1534275760
 mas "Messenger", id: 1480068668
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
-mas "Outline", id: 1356178125
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
+mas "SnippetsLab", id: 1006087419
 mas "Testflight", id: 899247664
 mas "Things", id: 904280696
 mas "Transporter", id: 1450874784

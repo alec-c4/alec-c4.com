@@ -13,6 +13,8 @@ description: How to configure your MacBook if you're developer or advanced user
 
 On September 16th, Apple have released macOS Sequoia 15.0, so I've decided to write down several articles how to configure it for development purposes from zero to development-ready state. I work with Ruby on Rails, JavaScript tooling, Flutter, React Native and some other tools, so my config will contain tools, required for my work, so if you'd like to use your own toolbox - just change to your own tools.
 
+## Table of contents
+
 ## System settings
 
 We will start with Control Center. Firstly, let's enable battery status widget and set "display percentage" to on. I do recommend to disable all items from menubar, except

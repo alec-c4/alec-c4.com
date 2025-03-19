@@ -1,7 +1,7 @@
 {
-  "name": "alec-c4",
+  "name": "astro-paper",
   "type": "module",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/sitemap": "^3.3.0",
     "@resvg/resvg-js": "^2.6.2",
-    "@tailwindcss/vite": "^4.0.13",
-    "astro": "^5.4.3",
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.3",
     "lodash.kebabcase": "^4.1.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.12.1",
     "sharp": "^0.33.5",
-    "tailwindcss": "^4.0.13"
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
@@ -41,5 +41,5 @@
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1"
   },
-  "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52"
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af"
 }
