@@ -13,7 +13,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: true,
-    url: "https://github.com/alec-c4/alec-c4.com/edit/master/src/data/blog",
+    url: "https://github.com/alec-c4/alec-c4.com/edit/master/",
     text: "Suggest Changes",
     appendFilePath: true,
   },
