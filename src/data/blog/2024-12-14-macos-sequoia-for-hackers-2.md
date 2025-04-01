@@ -152,6 +152,7 @@ brew "vips"
 brew "bat"
 brew "chezmoi"
 brew "jq"
+brew "fd"
 brew "fish"
 brew "ffmpeg"
 brew "gpg"
@@ -241,6 +242,7 @@ It is my actual `Brewfile`, so let me tell you about some useful apps, you maybe
 
 - [act](https://github.com/nektos/act) - utility to run GitHub actions locally
 - [fastlane](https://fastlane.tools) - mobile app deployment tool
+- [fd](https://github.com/sharkdp/fd) - user-friendly `find` alternative
 - [gh](https://cli.github.com/) - GitHub CLI utility
 - [lefthook](https://github.com/evilmartians/lefthook) - git hooks manager
 - [lnav](https://lnav.org/) - log file viewer
