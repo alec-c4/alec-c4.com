@@ -14,6 +14,7 @@ import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
 import { SITE } from "@/config";
 import Comments from "@/components/Comments.astro";
+import InfoWidget from "@/components/InfoWidget.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -102,6 +103,9 @@ const nextPost =
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" class="my-2" />
       <EditPost class="max-sm:hidden" {hideEditPost} {post} />
     </div>
+
+    <InfoWidget />
+
     <article id="article" class="mx-auto prose mt-8 max-w-5xl">
       <Content />
     </article>
