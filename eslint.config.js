@@ -14,12 +14,5 @@ export default [
     },
   },
   { rules: { "no-console": "error" } },
-  {
-    ignores: [
-      "dist/**",
-      ".astro",
-      "public/pagefind/**",
-      "src/components/GTMHead.astro",
-    ],
-  },
+  { ignores: ["dist/**", ".astro", "public/pagefind/**"] },
 ];
