@@ -15,7 +15,7 @@ I'm Alexey Poimtsev — technical director, entrepreneur, and software developme
 With years of hands-on coding, leading teams, and building products from the ground up, I’ve learned both the technical and strategic sides of software development. Here, I share insights, lessons learned, and practical advice for developers, tech leaders, and founders navigating the ever-changing world of technology. I hope you find it insightful and valuable!
 
 <div>
-  <img src="/alec-c4.jpg" class="w-auto mx-auto" alt="coding dev illustration">
+  <img src="/assets/alec-c4.jpg" class="w-auto mx-auto" alt="coding dev illustration">
 </div>
 
 ## Contacts
