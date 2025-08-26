@@ -28,6 +28,14 @@ You can also contact me directly using following links:
 
 ## Experience
 
+### Deeplay LLC 2025 – present
+
+**Head of the Operational Software Department**
+
+- Leading and mentoring a cross-functional development team
+- Establishing and optimizing software development processes in line with industry best practices
+- Driving collaboration and building effective communication between development and business teams
+
 ### Asgard Technology LLC (former Progress Engine) 2012 – present
 
 **Founder, CEO**
