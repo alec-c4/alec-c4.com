@@ -28,7 +28,7 @@ You can also contact me directly using following links:
 
 ## Experience
 
-### Deeplay LLC 2025 – present
+### Deeplay LLC 2025 – 2025
 
 **Head of the Operational Software Department**
 
