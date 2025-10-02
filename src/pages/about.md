@@ -32,9 +32,10 @@ You can also contact me directly using following links:
 
 **Head of the Operational Software Department**
 
-- Leading and mentoring a cross-functional development team
-- Establishing and optimizing software development processes in line with industry best practices
-- Driving collaboration and building effective communication between development and business teams
+- Led a 40-person cross-functional team, aligning development, analytics, and operations
+- Rebuilt processes around a core company product, accelerating feature delivery and improving team transparency
+- Introduced customer-centric principles: business and engineering worked as one unit with a strong focus on user value
+- Raised engineering culture: the team gained a clear understanding of business goals, established systematic knowledge sharing, drove initiatives proactively, and took ownership of results
 
 ### Asgard Technology LLC (former Progress Engine) 2012 – present
 
