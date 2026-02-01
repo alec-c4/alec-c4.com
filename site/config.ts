@@ -16,6 +16,12 @@ export interface SiteConfig {
   featuredPostsCount: number;
   latestPostsCount: number;
 
+  // Homepage projects
+  homeProjects: {
+    enabled: boolean;
+    count: number;
+  };
+
   // CTA (Call-to-Action) block for blog posts
   cta: {
     enabled: boolean;
@@ -67,6 +73,12 @@ export const SITE: SiteConfig = {
   // Homepage post counts
   featuredPostsCount: 3,
   latestPostsCount: 3,
+
+  // Homepage projects
+  homeProjects: {
+    enabled: true,
+    count: 4,
+  },
 
   // CTA (Call-to-Action) block for blog posts
   cta: {
