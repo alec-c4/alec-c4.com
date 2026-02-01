@@ -1,13 +1,22 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "public/pagefind"],
+  "exclude": ["dist", "tmp", "node_modules"],
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/config": ["site/config.ts"],
+      "@/*": ["src/*"],
+      "~/*": ["src/*"],
+      "$lib": ["./src/lib"],
+      "$lib/*": ["./src/lib/*"]
     },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "types": ["svelte"]
   }
 }
