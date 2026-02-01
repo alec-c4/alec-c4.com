@@ -5,7 +5,7 @@
   function handleKeydown(e: KeyboardEvent) {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
-      uiState.toggleSearch();
+      uiState.openSearch();
     }
   }
 
