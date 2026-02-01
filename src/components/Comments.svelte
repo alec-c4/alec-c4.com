@@ -13,10 +13,17 @@
     if (!mounted || !giscusContainer) return;
 
     const currentTheme = theme.current;
+    const resolvedTheme =
+      currentTheme === 'system'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        : currentTheme;
+
     const giscusTheme =
       config.theme === 'preferred_color_scheme'
-        ? currentTheme === 'dark'
-          ? 'dark'
+        ? resolvedTheme === 'dark'
+          ? 'transparent_dark'
           : 'light'
         : config.theme;
 
@@ -40,10 +47,17 @@
     if (!config.enabled || !giscusContainer) return;
 
     const currentTheme = theme.current;
+    const resolvedTheme =
+      currentTheme === 'system'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        : currentTheme;
+
     const giscusTheme =
       config.theme === 'preferred_color_scheme'
-        ? currentTheme === 'dark'
-          ? 'dark'
+        ? resolvedTheme === 'dark'
+          ? 'transparent_dark'
           : 'light'
         : config.theme;
 
