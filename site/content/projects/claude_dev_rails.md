@@ -5,7 +5,7 @@ link: 'https://github.com/alec-c4/claude-rails-dev'
 github: 'https://github.com/alec-c4/claude-rails-dev'
 tags: ['Claude Code', 'Ruby on Rails']
 types: ['open-source']
-order: 6
+order: 7
 ---
 
 A modular, role-based AI coding environment designed for building modern **Ruby on Rails (8.0+)** applications using **Claude Code**.

@@ -1,5 +1,5 @@
 ---
-title: 'ffmpeg core'
+title: 'ffmpeg_core'
 description: 'Modern Ruby wrapper for FFmpeg with clean API and proper error handling.'
 link: 'https://github.com/alec-c4/ffmpeg_core'
 github: 'https://github.com/alec-c4/ffmpeg_core'

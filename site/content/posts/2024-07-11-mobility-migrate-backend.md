@@ -41,7 +41,7 @@ Let's collect information about translated models. There are 2 database tables w
 
 Let's collect information about translated models
 
-```pgsql
+```
 app_dev=# select distinct translatable_type from mobility_string_translations;
  translatable_type
 -------------------
