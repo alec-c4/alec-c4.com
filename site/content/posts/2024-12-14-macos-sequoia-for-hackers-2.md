@@ -588,7 +588,7 @@ git commit -S -s -m "My Signed Commit" --allow-empty
 
 Finally, your `~/.gitconfig` will look like
 
-```plaitext
+```plaintext
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
