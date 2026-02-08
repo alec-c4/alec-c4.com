@@ -5,7 +5,7 @@ link: 'https://github.com/alec-c4/ratatoskr'
 github: 'https://github.com/alec-c4/ratatoskr'
 tags: ['Svelte', 'Tauri', 'Rust']
 types: ['open-source']
-order: 7
+order: 9
 ---
 
 ## Features

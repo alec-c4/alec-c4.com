@@ -8,6 +8,7 @@ import { getPublishedPosts, getPostSlug } from '@/lib/utils/posts';
 import Breadcrumbs from '@/components/Breadcrumbs.svelte';
 import SocialShare from '@/components/SocialShare.svelte';
 import SeriesNavigation from '@/components/SeriesNavigation.astro';
+import LanguageSelector from '@/components/LanguageSelector.svelte';
 import CTABlock from '@/components/CTABlock.astro';
 import Comments from '@/components/Comments.svelte';
 import { getBlogPostingSchema, getBreadcrumbSchema } from '@/lib/schemas';
@@ -117,6 +118,12 @@ const schemas = [
         {
           post.data.series && (
             <SeriesNavigation seriesId={post.data.series.id} currentPostId={post.id} />
+          )
+        }
+
+        {
+          post.data.translatedPosts && (
+            <LanguageSelector client:load translations={post.data.translatedPosts} />
           )
         }
       </div>

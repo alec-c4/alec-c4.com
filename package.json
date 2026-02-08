@@ -1,7 +1,7 @@
 {
   "name": "spaceship",
   "type": "module",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "packageManager": "pnpm@10.19.0",
   "scripts": {
     "dev": "astro dev",
@@ -26,7 +26,6 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
-    "astro-og-canvas": "^0.10.1",
     "mermaid": "^11.12.2",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-external-links": "^3.0.0",
@@ -34,13 +33,13 @@
     "remark-emoji": "^5.0.2",
     "satori": "^0.19.1",
     "satori-html": "^0.3.2",
-    "svelte": "^5.49.1",
+    "svelte": "^5.50.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/svelte": "^7.2.5",
-    "@evilmartians/lefthook": "^2.0.16",
+    "@evilmartians/lefthook": "^2.1.0",
     "@rollup/rollup-darwin-arm64": "^4.57.1",
     "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "@typescript-eslint/eslint-plugin": "^8.54.0",

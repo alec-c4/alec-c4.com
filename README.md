@@ -34,6 +34,7 @@
   - **Heading Anchor Links**: Clickable links for sharing specific sections.
   - **Mermaid Diagrams**: Support for flowcharts and diagrams directly in markdown.
   - **Emoji Support**: Native emoji shortcodes (`:rocket:`, etc.).
+  - **Multi-language Support**: Link posts to their translated versions (e.g. English <-> Russian) with automatic flag indicators.
 - **🧹 Modular Architecture**: Well-organized components and content collections.
 
 ## 🛠️ Tech Stack
@@ -155,8 +156,8 @@ export const SITE = {
 
 Comprehensive guides are available as blog posts in your installation:
 
-- **[How to Publish Posts](http://localhost:4321/posts/how-to-publish-posts)** - Complete guide to creating posts, frontmatter options, images, and advanced features
-- **[Configuring Spaceship](http://localhost:4321/posts/configuring-spaceship)** - All configuration options, deployment, and customization
+- **[How to Publish Posts](docs/how-to-publish-posts.md)** - Complete guide to creating posts, frontmatter options, images, and advanced features
+- **[Configuring Spaceship](docs/configuring-spaceship.md)** - All configuration options, deployment, and customization
 
 ### Quick Links
 

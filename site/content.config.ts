@@ -26,6 +26,7 @@ const posts = defineCollection({
         order: z.number(),
       })
       .optional(),
+    translatedPosts: z.record(z.string()).optional(), // lang -> slug mapping
   }),
 });
 
