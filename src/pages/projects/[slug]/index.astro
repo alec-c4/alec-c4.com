@@ -7,9 +7,9 @@ import { getBreadcrumbSchema } from '@/lib/schemas';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
-  // Only generate pages for projects without directLink or where directLink is false
+  // Only generate pages for projects without directLink or where directLink is false, or if link is missing
   return projects
-    .filter((project) => !project.data.directLink)
+    .filter((project) => !project.data.directLink || !project.data.link)
     .map((project: CollectionEntry<'projects'>) => ({
       params: { slug: project.id },
       props: project,

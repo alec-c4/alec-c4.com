@@ -1,7 +1,6 @@
 ---
 title: 'auto_decorator'
 description: 'Convention-based decorator autoloading for Rails models.'
-link: 'https://github.com/alec-c4/auto_decorator'
 github: 'https://github.com/alec-c4/auto_decorator'
 tags: ['Ruby on Rails', 'Active Record', 'Decorator']
 types: ['open-source']

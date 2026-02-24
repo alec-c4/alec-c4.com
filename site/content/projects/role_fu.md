@@ -1,7 +1,6 @@
 ---
 title: 'role_fu'
 description: 'Role management gem for Ruby on Rails'
-link: 'https://github.com/alec-c4/role_fu'
 github: 'https://github.com/alec-c4/role_fu'
 tags: ['role management', 'acl', 'Ruby on Rails']
 types: ['open-source']

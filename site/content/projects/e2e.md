@@ -1,7 +1,6 @@
 ---
 title: 'e2e'
-description: 'Role management gem for Ruby on Rails'
-link: 'https://github.com/alec-c4/e2e'
+description: 'Unified, high-performance E2E testing framework for Ruby.'
 github: 'https://github.com/alec-c4/e2e'
 tags: ['e2e', 'testing', 'Ruby on Rails']
 types: ['open-source']

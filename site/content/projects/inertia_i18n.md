@@ -1,7 +1,6 @@
 ---
 title: 'Inertia I18n'
 description: 'Translation management for Inertia.js applications with Rails backend'
-link: 'https://github.com/alec-c4/inertia_i18n'
 github: 'https://github.com/alec-c4/inertia_i18n'
 tags: ['Svelte', 'React', 'Vue', 'Inertia.js', 'Ruby on Rails']
 types: ['open-source']

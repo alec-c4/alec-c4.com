@@ -1,7 +1,6 @@
 ---
 title: 'Kickstart'
 description: 'Ruby on Rails application templates'
-link: 'https://github.com/alec-c4/kickstart'
 github: 'https://github.com/alec-c4/kickstart'
 tags: ['Svelte', 'React', 'Vue', 'Inertia.js', 'Ruby on Rails']
 types: ['open-source']

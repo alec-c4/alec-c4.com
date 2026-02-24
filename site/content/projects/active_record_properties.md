@@ -1,7 +1,6 @@
 ---
 title: 'active_record_properties'
 description: 'Role management gem for Ruby on Rails'
-link: 'https://github.com/alec-c4/active_record_properties'
 github: 'https://github.com/alec-c4/active_record_properties'
 tags: ['Ruby on Rails', 'Active Record']
 types: ['open-source']

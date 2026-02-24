@@ -8,7 +8,7 @@ import globals from 'globals';
 import svelteParser from 'svelte-eslint-parser';
 import tsParser from '@typescript-eslint/parser';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   js.configs.recommended,
   ...ts.configs.recommended,
