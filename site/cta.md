@@ -12,3 +12,7 @@ Whether you need:
 Let's build something amazing together!
 
 [Get in touch](mailto:alec@alec-c4.com)
+
+or sponsor my open source work:
+
+[Sponsor on GitHub](https://github.com/sponsors/alec-c4)
