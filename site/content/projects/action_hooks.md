@@ -1,6 +1,6 @@
 ---
 title: 'action_hooks'
-description: 'Role management gem for Ruby on Rails'
+description: 'Ruby on Rails engine designed to securely handle incoming webhooks'
 github: 'https://github.com/alec-c4/action_hooks'
 tags: ['Ruby on Rails', 'Webhooks']
 types: ['open-source']
