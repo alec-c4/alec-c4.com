@@ -12,6 +12,7 @@
     "baseUrl": ".",
     "paths": {
       "@/config": ["site/config.ts"],
+      "@/site-assets/*": ["site/assets/*"],
       "@/*": ["src/*"],
       "~/*": ["src/*"],
       "$lib": ["./src/lib"],

@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'zod';
 import { glob } from 'astro/loaders';
 
 const posts = defineCollection({
@@ -16,7 +17,7 @@ const posts = defineCollection({
     featured: z.boolean().optional(),
     draft: z.boolean().default(false),
     ogImage: z.string().optional(),
-    canonicalURL: z.string().url().optional(),
+    canonicalURL: z.url().optional(),
     showCTA: z.boolean().default(true),
     showComments: z.boolean().default(true),
     lang: z.string().default('en'),
@@ -26,7 +27,7 @@ const posts = defineCollection({
         order: z.number(),
       })
       .optional(),
-    translatedPosts: z.record(z.string()).optional(), // lang -> slug mapping
+    translatedPosts: z.record(z.string(), z.string()).optional(), // lang -> slug mapping
   }),
 });
 
@@ -38,8 +39,8 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    link: z.string().url().optional(),
-    github: z.string().url().optional(),
+    link: z.url().optional(),
+    github: z.url().optional(),
     tags: z.array(z.string()).default([]),
     types: z.array(z.enum(['commercial', 'open-source', 'social'])).default([]),
     image: z.string().optional(),
@@ -59,7 +60,7 @@ const appearances = defineCollection({
     date: z.date(),
     type: z.enum(['talk', 'podcast', 'article', 'workshop', 'video']),
     media: z.enum(['video', 'audio', 'text']).optional(),
-    link: z.string().url(),
+    link: z.url(),
     description: z.string().optional(),
     lang: z.string().default('en'),
     duration: z.string().optional(),
