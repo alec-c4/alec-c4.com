@@ -1,5 +1,4 @@
-import { defineCollection } from 'astro:content';
-import { z } from 'zod';
+import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const posts = defineCollection({
