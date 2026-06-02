@@ -1,3 +1,13 @@
 [tools]
 node = "latest"
 pnpm = "latest"
+
+[tasks.dev]
+description = "Run development server"
+run = ["pnpm run dev"]
+
+[tasks.update]
+description = "Update packages"
+run = [
+  "pnpm up"
+]

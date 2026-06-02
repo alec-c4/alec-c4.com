@@ -17,6 +17,7 @@ import {
   transformerNotationWordHighlight,
 } from '@shikijs/transformers';
 
+import { unified } from '@astrojs/markdown-remark';
 import { SITE } from './site/config';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -53,31 +54,33 @@ export default defineConfig({
         transformerNotationDiff(),
       ],
     },
-    remarkPlugins: [remarkEmoji],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: 'prepend',
-          properties: {
-            className: ['heading-link'],
-            ariaLabel: 'Link to section',
+    processor: unified({
+      remarkPlugins: [remarkEmoji],
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'prepend',
+            properties: {
+              className: ['heading-link'],
+              ariaLabel: 'Link to section',
+            },
+            content: {
+              type: 'text',
+              value: '#',
+            },
           },
-          content: {
-            type: 'text',
-            value: '#',
+        ],
+        [
+          rehypeExternalLinks,
+          {
+            target: '_blank',
+            rel: ['noopener', 'noreferrer'],
           },
-        },
+        ],
       ],
-      [
-        rehypeExternalLinks,
-        {
-          target: '_blank',
-          rel: ['noopener', 'noreferrer'],
-        },
-      ],
-    ],
+    }),
   },
 
   image: {

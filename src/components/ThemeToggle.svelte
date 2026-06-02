@@ -1,6 +1,5 @@
 <script lang="ts">
   import { theme } from '@/lib/theme.svelte';
-  import { slide } from 'svelte/transition';
   import { onMount } from 'svelte';
 
   let isOpen = $state(false);
@@ -98,7 +97,6 @@
 
   {#if isOpen}
     <div
-      transition:slide={{ duration: 200 }}
       class="absolute right-0 mt-2 w-36 rounded-md border bg-popover text-popover-foreground shadow-lg focus:outline-none z-50 overflow-hidden"
     >
       <div class="p-1">
