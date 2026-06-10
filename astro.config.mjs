@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import svelte from '@astrojs/svelte';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
@@ -17,7 +18,6 @@ import {
   transformerNotationWordHighlight,
 } from '@shikijs/transformers';
 
-import { unified } from '@astrojs/markdown-remark';
 import { SITE } from './site/config';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -41,19 +41,6 @@ export default defineConfig({
   },
 
   markdown: {
-    shikiConfig: {
-      themes: {
-        light: 'min-light',
-        dark: 'catppuccin-frappe',
-      },
-      defaultColor: false,
-      wrap: true,
-      transformers: [
-        transformerNotationHighlight(),
-        transformerNotationWordHighlight(),
-        transformerNotationDiff(),
-      ],
-    },
     processor: unified({
       remarkPlugins: [remarkEmoji],
       rehypePlugins: [
@@ -81,6 +68,19 @@ export default defineConfig({
         ],
       ],
     }),
+    shikiConfig: {
+      themes: {
+        light: 'min-light',
+        dark: 'catppuccin-frappe',
+      },
+      defaultColor: false,
+      wrap: true,
+      transformers: [
+        transformerNotationHighlight(),
+        transformerNotationWordHighlight(),
+        transformerNotationDiff(),
+      ],
+    },
   },
 
   image: {
