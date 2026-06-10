@@ -2,7 +2,7 @@
 title: 'Kickstart is back'
 description: "What's new in Kickstart 1.0"
 pubDate: 2025-09-19
-tags: ['ruby on rails', 'ruby', 'development automation']
+tags: ['ruby on rails', 'ruby', 'development automation', 'open source']
 ---
 
 Several years ago I created an opinionated set of Ruby on Rails application templates called **Kickstart**. The project went inactive for some time, but a week ago I decided to rebuild it from the ground up. I’m excited to share that a new version is now in active development, with more features on the way.
