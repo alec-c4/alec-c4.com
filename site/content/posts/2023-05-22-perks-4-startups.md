@@ -10,6 +10,7 @@ featured: true
 Here is a curated list of grants and perks for early-stage companies. If you have something to add to this list - please let me know.
 
 - **Amazon AWS** <https://aws.amazon.com/activate/> - up to $100k in AWS credits to cover your AWS service usage
+- **Anthropic (Claude)** <https://claude.com/programs/startups> - API credits up to $100k, early access to new models
 - **Cloudflare** <https://www.cloudflare.com/forstartups/> - one year of free Cloudflare services
 - **DigitalOcean Hatch Program** <https://www.digitalocean.com/hatch> - 12 months of infrastructure credit
 - **Google for Startups Cloud Program** <https://cloud.google.com/startup/apply> - up to $200,000 in cloud credits over 2 years
