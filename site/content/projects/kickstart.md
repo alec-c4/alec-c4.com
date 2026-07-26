@@ -1,17 +1,17 @@
 ---
 title: 'Kickstart'
-description: 'Ruby on Rails application templates'
+description: 'Production-ready Ruby on Rails application templates for common frontend stacks.'
 github: 'https://github.com/alec-c4/kickstart'
 tags: ['Svelte', 'React', 'Vue', 'Inertia.js', 'Ruby on Rails']
 types: ['open-source']
 order: 1
 ---
 
-It is a collection of application templates, scripts, and automatizations I use for everyday work. All included code is written with the following principles:
+Kickstart is a collection of application templates, scripts, and automations used for everyday work. All included code follows a few core principles:
 
 - Code is testable
 - Code is written to be supported without a hassle
-- Code is written, following best practices from developers and product communities
+- Code follows best practices from the Ruby and product communities
 
 ## Templates
 

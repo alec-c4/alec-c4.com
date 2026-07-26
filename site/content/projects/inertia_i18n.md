@@ -1,25 +1,27 @@
 ---
 title: 'Inertia I18n'
-description: 'Translation management for Inertia.js applications with Rails backend'
+description: 'Keeps Rails YAML locales and frontend i18next JSON translations in sync for Inertia.js apps.'
 github: 'https://github.com/alec-c4/inertia_i18n'
 tags: ['Svelte', 'React', 'Vue', 'Inertia.js', 'Ruby on Rails']
 types: ['open-source']
 order: 4
 ---
 
+InertiaI18n bridges the translation gap in Rails/Inertia.js applications, converting between backend and frontend locale formats with a single source of truth.
+
 ## The Problem
 
 Inertia.js applications have a split architecture:
 
-- **Backend (Rails):** Uses YAML locale files (`config/locales/*.yml`)
-- **Frontend (React/Svelte/Vue):** Uses i18next JSON files
+- **Backend (Rails)** - Uses YAML locale files (`config/locales/*.yml`)
+- **Frontend (React/Svelte/Vue)** - Uses i18next JSON files
 
 This creates several challenges:
 
-1. **Duplicate management:** Maintaining translations in two formats
-2. **Sync issues:** Keys in YAML but missing in JSON (or vice versa)
-3. **No usage tracking:** Unused translation keys accumulate
-4. **Manual process:** Converting YAML → JSON by hand is error-prone
+1. **Duplicate management** - Maintaining translations in two formats
+2. **Sync issues** - Keys in YAML but missing in JSON (or vice versa)
+3. **No usage tracking** - Unused translation keys accumulate
+4. **Manual process** - Converting YAML → JSON by hand is error-prone
 
 Existing tools like [i18n-tasks](https://github.com/glebm/i18n-tasks) only handle Rails/backend translations.
 
