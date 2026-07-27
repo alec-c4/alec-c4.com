@@ -9,7 +9,7 @@ series:
   order: 2
 ---
 
-Welcome back to my series how to develop GraphQL API for rails applications from scratch.
+Welcome back to my series on how to develop GraphQL API for rails applications from scratch.
 
 ## Authentication - signIn method
 
@@ -41,7 +41,7 @@ class AuthToken
 end
 ```
 
-How does it work. We use `jwt_secret` which is stored in rails credentials to create a token which stores `user_id` and to find `User` record by token.
+How does it work? We use `jwt_secret` which is stored in rails credentials to create a token which stores `user_id` and to find `User` record by token.
 
 Let's create our `jwt_secret` for development and test environments
 
@@ -124,13 +124,12 @@ module Mutations::Users
 
     def resolve(email:, password:)
       user = User.find_by(email:)
-      errors = {}
 
       if user&.authenticate(password)
         context[:current_user] = user
         token = AuthToken.token(user)
 
-        {token: AuthToken.token(user), user:, success: true}
+        {token:, user:, success: true}
       else
         user = nil
         context[:current_user] = nil
@@ -286,7 +285,7 @@ Let's break for a while to improve our code a bit.
 
 ## Improvements - whoAmI method, inflections and GraphQL schema dump
 
-Let's add a helper method to easily test our authentication. Add following lines to `app/graphql/types/query_type.rb` (you can replace `test_field` method)
+Let's add a helper method to easily test our authentication. Add the following lines to `app/graphql/types/query_type.rb` (you can replace `test_field` method)
 
 ```ruby
 field :who_am_i, String, null: false,
@@ -332,7 +331,7 @@ You'll see
 }
 ```
 
-Let's play with inflections. Open file `config/initializers/inflections.rb` and make in looks like
+Let's play with inflections. Open file `config/initializers/inflections.rb` and make it look like
 
 ```ruby
 ActiveSupport::Inflector.inflections(:en) do |inflect|
@@ -369,7 +368,7 @@ RSpec.describe "GraphQL schema" do
   it "must be reflected in the .graphql file" do
     current_defn = GraphQLFromScratchSchema.to_definition
     printout_defn = File.read(Rails.root.join("app/graphql/schema.graphql"))
-    assert_equal(current_defn, printout_defn, "Update the printed schema with `bundle exec rake dump_schema`")
+    assert_equal(current_defn, printout_defn, "Update the printed schema with `bundle exec rake graphql:dump_schema`")
   end
 end
 ```

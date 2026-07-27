@@ -6,15 +6,15 @@ slug: 2022-10-04-rails-custom-error-pages
 tags: ['ruby on rails', 'ruby']
 ---
 
-Ruby on rails is shipped with html-based error pages, but with some easy steps you can create your own erb-based pages. So, let's do it.
+Ruby on Rails is shipped with html-based error pages, but with some easy steps you can create your own erb-based pages. So, let's do it.
 
-Firstly you need to create controller, views and routes for your pages.
+Firstly you need to create a controller, views and routes for your pages.
 
 ```bash
 rails g controller errors not_found unprocessable unacceptable internal_server_error
 ```
 
-This generator will create at least following files - `app/controllers/errors_controller.rb`, `app/views/errors` directory and add routes to your `config/routes.rb`
+This generator will create at least the following files - `app/controllers/errors_controller.rb`, `app/views/errors` directory and add routes to your `config/routes.rb`
 
 **errors_controller.rb**:
 
@@ -51,7 +51,7 @@ end
   match "/500", to: "errors#internal_server_error", via: :all
 ```
 
-Now, you need to disable default rails error handler. To do that you need to add following line to your `config/application.rb`
+Now, you need to disable the default rails error handler. To do that you need to add the following line to your `config/application.rb`
 
 ```ruby
   class Application < Rails::Application
@@ -62,17 +62,17 @@ Now, you need to disable default rails error handler. To do that you need to add
   end
 ```
 
-If you want to test error pages locally, you need to set following option in your `config/environments/development.rb`
+If you want to test error pages locally, you need to set the following option in your `config/environments/development.rb`
 
 ```ruby
-  # Show full error reports.
+  # Disable full error reports to preview custom error pages locally.
   config.consider_all_requests_local = false
 ```
 
-Almost perfect, but I'd like to propose you some improvements. Let's look back to `config/environments/development.rb` and to some changes
+Almost perfect, but I'd like to propose some improvements to you. Let's look back to `config/environments/development.rb` and make some changes
 
 ```ruby
-  # Show full error reports.
+  # Show full error reports, unless tmp/errors-dev.txt exists.
   config.consider_all_requests_local = !Rails.root.join("tmp/errors-dev.txt").exist?
 ```
 

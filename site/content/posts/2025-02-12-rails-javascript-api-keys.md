@@ -9,7 +9,7 @@ Sometimes, you might need to pass API keys from your Rails code to JavaScript. I
 
 First and foremost, I want to emphasize that these keys will be accessible to anyone who has the knowledge to open developer tools in a browser. Therefore, I strongly advise against using secret keys in such situations. However, it’s perfectly acceptable to use public keys.
 
-Imagine, we need to pass SuperPlatform public API key from ENV variable or from rails credentials. If you need to access this key from any page you can define meta-tag in your layout `app/views/layouts/application.html.erb` with
+Imagine, we need to pass a SuperPlatform public API key from an ENV variable or from Rails credentials. If you need to access this key from any page you can define meta-tag in your layout `app/views/layouts/application.html.erb` with
 
 ```erb
 <%= tag.meta name: "superplatform-key", content: Rails.application.credentials.superplatform[:api_key] %>

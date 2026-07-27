@@ -8,9 +8,9 @@ tags: ['ruby']
 
 Missed me? Don’t worry - I’m back, and I’d like to share an awesome thing I’ve found today.
 
-You've maybe heard about [Jupyter notebooks](https://jupyter.org/) - an awesome web application which allows you to run python code in a browser. There are another similar project - [Livebook](https://livebook.dev/) which allow running Elixir code in browser.
+You've maybe heard about [Jupyter notebooks](https://jupyter.org/) - an awesome web application which allows you to run python code in a browser. There is another similar project - [Livebook](https://livebook.dev/) which allows running Elixir code in a browser.
 
-But what to do if you are a ruby developer and `irb` and `pry` is not enough for you? Fortunately, with [iruby](https://github.com/SciRuby/iruby) gem you can run ruby code in Jupyter notebooks. So, lets start.
+But what to do if you are a ruby developer and `irb` and `pry` are not enough for you? Fortunately, with [iruby](https://github.com/SciRuby/iruby) gem you can run ruby code in Jupyter notebooks. So, let's start.
 
 Firstly, you need to install Jupyter notebooks if it isn't installed yet on your laptop.
 
@@ -23,7 +23,7 @@ Python 3.10.9
 pip 22.3.1 from /Users/alec/Library/Python/3.10/lib/python/site-packages/pip (python 3.10)
 ```
 
-Looks good. You maybe need to update installed packages.
+Looks good. You may need to update installed packages.
 
 ```bash
 ❯ pip3 install --upgrade pip

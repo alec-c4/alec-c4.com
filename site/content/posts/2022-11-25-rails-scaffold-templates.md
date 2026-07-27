@@ -6,7 +6,7 @@ slug: 2022-11-25-rails-scaffold-templates
 tags: ['ruby on rails', 'ruby']
 ---
 
-Starting from rails7, core team have changed scaffold templates and from my point of view - it is not the best change they have done. Every time I run `rails g scaffold Post title:string body:text` or something like this I need to change views, controller and specs to match my needs. And today I'll show you how to customize your templates to reduce time you spend to change generated code.
+Starting from rails 7, the core team has changed scaffold templates and from my point of view - it is not the best change they have done. Every time I run `rails g scaffold Post title:string body:text` or something like this I need to change views, controller and specs to match my needs. And today I'll show you how to customize your templates to reduce time you spend changing generated code.
 
 Firstly, let me show you where those templates are located. If you check links below - you'll see a source code of standard rails templates for [views](https://github.com/rails/rails/tree/main/railties/lib/rails/generators/erb/scaffold/templates) and [controllers](https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/scaffold_controller/templates/controller.rb.tt).
 
@@ -18,7 +18,7 @@ notice: t(".create_successful")
 
 to appropriate places.
 
-Next, let's change our view templates. I don't like current ones so I took [templates from rails 6.x](https://github.com/rails/rails/tree/6-0-stable/railties/lib/rails/generators/erb/scaffold/templates) and updated it for my needs (for bootstrap based project I've taken [bootstrap_form gem](https://github.com/bootstrap-ruby/bootstrap_form) and have changed ujs-dependent code to use [hotwire](https://hotwired.dev/)). I've created directory `lib/templates/erb/scaffold` and placed my `_form.html.erb.tt`, `edit.html.erb.tt`, `index.html.erb.tt`, `partial.html.erb.tt`, `new.html.erb.tt`, `show.html.erb.tt` to that location. You can find my code below
+Next, let's change our view templates. I don't like current ones so I took [templates from rails 6.x](https://github.com/rails/rails/tree/6-0-stable/railties/lib/rails/generators/erb/scaffold/templates) and updated them for my needs (for bootstrap based project I've taken [bootstrap_form gem](https://github.com/bootstrap-ruby/bootstrap_form) and have changed ujs-dependent code to use [hotwire](https://hotwired.dev/)). I've created directory `lib/templates/erb/scaffold` and placed my `_form.html.erb.tt`, `edit.html.erb.tt`, `index.html.erb.tt`, `partial.html.erb.tt`, `new.html.erb.tt`, `show.html.erb.tt` in that location. You can find my code below
 
 **\_form.html.erb.tt**
 
@@ -73,7 +73,7 @@ Next, let's change our view templates. I don't like current ones so I took [temp
 </div>
 ```
 
-**_index.html.erb.tt_**
+**index.html.erb.tt**
 
 ```ruby
 <h1><%= human_name.pluralize %></h1>
@@ -110,9 +110,9 @@ Next, let's change our view templates. I don't like current ones so I took [temp
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
     <td>
     <% if attribute.attachment? -%>
-        <%%= link_to <%= singular_name %>.<%= attribute.column_name %>.filename, <%= singular_name %>.<%= attribute.column_name %> if <%= singular_name %>.<%= attribute.column_name %>.attached? %>
+        <%%= link_to <%= singular_table_name %>.<%= attribute.column_name %>.filename, <%= singular_table_name %>.<%= attribute.column_name %> if <%= singular_table_name %>.<%= attribute.column_name %>.attached? %>
     <% elsif attribute.attachments? -%>
-        <%% <%= singular_name %>.<%= attribute.column_name %>.each do |<%= attribute.singular_name %>| %>
+        <%% <%= singular_table_name %>.<%= attribute.column_name %>.each do |<%= attribute.singular_name %>| %>
           <div><%%= link_to <%= attribute.singular_name %>.filename, <%= attribute.singular_name %> %></div>
     <% else %>
         <%%= <%= singular_table_name %>.<%= attribute.column_name %> %>
@@ -125,7 +125,7 @@ Next, let's change our view templates. I don't like current ones so I took [temp
 </tr>
 ```
 
-**_new.html.erb.tt_**
+**new.html.erb.tt**
 
 ```ruby
 <h1>New <%= human_name.downcase %></h1>
@@ -139,7 +139,7 @@ Next, let's change our view templates. I don't like current ones so I took [temp
 </div>
 ```
 
-**_show.html.erb.tt_**
+**show.html.erb.tt**
 
 ```ruby
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
@@ -161,7 +161,7 @@ Next, let's change our view templates. I don't like current ones so I took [temp
 <%%= link_to 'Back', <%= index_helper %>_path %>
 ```
 
-And the last step - let's update rspec template for model. In my example I'll create a template for model spec with sections `fields` (to put field-specific tests, such as counter cache), `associations` (has_many, belongs_to etc), `validations` and `methods`. All I need it to create file `lib/templates/rspec/model/model_spec.rb.tt` with following
+And the last step - let's update rspec template for model. In my example I'll create a template for model spec with sections `fields` (to put field-specific tests, such as counter cache), `associations` (has_many, belongs_to etc), `validations` and `methods`. All I need is to create a file `lib/templates/rspec/model/model_spec.rb.tt` with the following
 
 ```ruby
 require "rails_helper"

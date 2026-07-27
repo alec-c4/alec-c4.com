@@ -39,11 +39,11 @@ To fully enjoy modern shell themes (like the upcoming powerlevel10k), set the fo
 
 ![Warp](/images/macos-sequoia/warp-02.png)
 
-Another useful thing is to dim inactive panes and to follow the cursor. If you have a tab which is diveded to several panes (this can be done via `cmd+d` to split right or `cmd+shift+d` to split down) - just move your cursor over the pane to make it active.
+Another useful thing is to dim inactive panes and to follow the cursor. If you have a tab which is divided into several panes (this can be done via `cmd+d` to split right or `cmd+shift+d` to split down) - just move your cursor over the pane to make it active.
 
 ![Warp](/images/macos-sequoia/warp-03.png)
 
-About splitting panes - I'd like to recommend to you the following configuration. In most cases you do splitting to perform something useful in the same directory, but opening f the new tabs and windows in most cases is related to another project or activity.
+About splitting panes - I'd like to recommend to you the following configuration. In most cases you do splitting to perform something useful in the same directory, but opening the new tabs and windows in most cases is related to another project or activity.
 
 ![Warp](/images/macos-sequoia/warp-04.png)
 
@@ -51,7 +51,7 @@ If you like to enter commands from the top of the screen - there is an option fo
 
 ![Warp](/images/macos-sequoia/warp-05.png)
 
-It is useful to have similar keyboard shortcuts in different applications and, fortunately most of the terminals have similar shortcuts. One little tweak - set `cmd+r` to clear screen.
+It is useful to have similar keyboard shortcuts in different applications and, fortunately, most of the terminals have similar shortcuts. One little tweak - set `cmd+r` to clear screen.
 
 ![Warp](/images/macos-sequoia/warp-06.png)
 
@@ -61,11 +61,11 @@ Time to pimp out iTerm2. First of all, let's check that you've enabled the warni
 
 ![iTerm](/images/macos-sequoia/iterm-01.png)
 
-Then let's configure tabs. Now - tab bar is visible even if there is only one tab open or iterm2 is in full screen mode.
+Then let's configure tabs. Now - the tab bar is visible even if there is only one tab open or iTerm2 is in full screen mode.
 
 ![iTerm](/images/macos-sequoia/iterm-02.png)
 
-Similar to Warp, we will set `MesloLGS NF` font for our terminal.
+Similar to Warp, we will set the `MesloLGS NF` font for our terminal.
 
 ![iTerm](/images/macos-sequoia/iterm-03.png)
 
@@ -79,7 +79,7 @@ And, similar to Warp, we will enable the follow-cursor feature for split panes.
 
 ## Package manager
 
-Say hello to [HomeBrew](https://brew.sh), the package manager that makes installing, updating, and managing software a breeze. Get started with
+Say hello to [Homebrew](https://brew.sh), the package manager that makes installing, updating, and managing software a breeze. Get started with
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -97,7 +97,7 @@ and uninstall (with cleanup)
 brew uninstall google-chrome --zap
 ```
 
-`--zap` key is used to remove associated configuration files from the system. Also, you can search required apps [here](https://formulae.brew.sh) or using command prompt
+`--zap` key is used to remove associated configuration files from the system. Also, you can search for required apps [here](https://formulae.brew.sh) or using command prompt
 
 ```bash
 brew search firefox
@@ -109,7 +109,7 @@ and get package info using
 brew info firefox
 ```
 
-To supercharge your setup, create a Brewfile. It’s a one-stop list of all your favorite tools and apps. `Brewfile` may contain following lines
+To supercharge your setup, create a Brewfile. It’s a one-stop list of all your favorite tools and apps. `Brewfile` may contain the following lines
 
 - `tap` is used to fetch information from external package repos
 - `brew` is used to install command line utils
@@ -232,7 +232,7 @@ Install everything with:
 brew bundle
 ```
 
-It is my actual `Brewfile`, so let me tell you about some useful apps, you maybe haven't heard before
+It is my actual `Brewfile`, so let me tell you about some useful apps, you may not have heard of before
 
 - [act](https://github.com/nektos/act) - utility to run GitHub actions locally
 - [fastlane](https://fastlane.tools) - mobile app deployment tool
@@ -251,7 +251,7 @@ It is my actual `Brewfile`, so let me tell you about some useful apps, you maybe
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k) - zsh theme
 - [rm-improved](https://github.com/nivekuil/rip) - alternative to system `rm` command
 - [topgrade](https://github.com/topgrade-rs/topgrade) - automatic upgrade for all installed stuff
-- [xh](https://github.com/ducaale/xh) - alternative to `curl`, fast as hell and friendly like a Spider-Man :)
+- [xh](https://github.com/ducaale/xh) - alternative to `curl`, fast as hell and friendly like Spider-Man :)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) - audio and video downloader from different sources
 - [zellij](https://zellij.dev) - terminal multiplexer, alternative to `tmux`
 - [zoxide](https://github.com/ajeetdsouza/zoxide) - fast filesystem navigation
@@ -260,7 +260,7 @@ It is my actual `Brewfile`, so let me tell you about some useful apps, you maybe
 
 ## Shell and shell prompt
 
-Then, lets setup our shell. I do prefer [zsh](https://zsh.org), but you may choose something else, like [fish shell](https://fishshell.com) or any other shell.
+Then, let's set up our shell. I do prefer [zsh](https://zsh.org), but you may choose something else, like [fish shell](https://fishshell.com) or any other shell.
 
 Let's improve our zsh experience with [Oh My Zsh (OMZ)](https://ohmyz.sh) framework, which contains color themes, plugins and other useful stuff:
 
@@ -285,7 +285,7 @@ or using git
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-On the first run it will download all required fonts and ask you to choose look for your shell
+On the first run it will download all required fonts and ask you to choose a look for your shell
 
 ![powerlevel10k](https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/configuration-wizard.gif)
 
@@ -308,7 +308,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-#-- zsh plugins - command line completitions, aliases, etc
+#-- zsh plugins - command line completions, aliases, etc
 plugins=(brew bun bundler docker docker-compose flutter fzf gem genpass git pip python rails rbenv ruby ssh-agent vscode zoxide zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
@@ -449,7 +449,7 @@ exit
 
 Last thing I'd like to tell you about is a GPG, GNU Pretty Good Privacy tool. You can use it to sign your commits and emails, encrypt and decrypt data.
 
-> WARNING: DO NOT PUT YOU `.gnupg` DIRECTORY UNDER CHEZMOI TO AVOID SECURITY ISSUES!!!
+> WARNING: DO NOT PUT YOUR `.gnupg` DIRECTORY UNDER CHEZMOI TO AVOID SECURITY ISSUES!!!
 
 Firstly, we need to create our first private key
 
@@ -580,7 +580,7 @@ git config --global commit.gpgsign true
 git config --global user.signingkey 0000000000000000000000000000000000000000
 ```
 
-and let's check how its work
+and let's check how it works
 
 ```bash
 git commit -S -s -m "My Signed Commit" --allow-empty

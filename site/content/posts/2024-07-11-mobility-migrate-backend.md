@@ -6,7 +6,7 @@ slug: 2024-07-11-mobility-migrate-backends
 tags: ['ruby on rails', 'ruby', 'rubygems']
 ---
 
-One of the tasks I'm currently working on is migration from [KeyValue backend](https://github.com/shioyama/mobility/wiki/KeyValue-Backend) to [Container backend](https://github.com/shioyama/mobility/wiki/Container-Backend) in the project powered with [mobility](https://github.com/shioyama/mobility/) gem. Today we'll try to perform such migration. Of course - you can adapt code below to migrate between other backends.
+One of the tasks I'm currently working on is a migration from [KeyValue backend](https://github.com/shioyama/mobility/wiki/KeyValue-Backend) to [Container backend](https://github.com/shioyama/mobility/wiki/Container-Backend) in the project powered by [mobility](https://github.com/shioyama/mobility/) gem. Today we'll try to perform such migration. Of course - you can adapt code below to migrate between other backends.
 
 Firstly, you need to change your backend in the config file `config/initializers/mobility.rb` if you want to act globally
 
@@ -30,7 +30,7 @@ class Tag < ApplicationRecord
 end
 ```
 
-Let's collect information about translated models. There are 2 database tables which are used to store translations on key-value backend - `mobility_string_translations` and ``mobility_text_translations`. Those tables contain data in the following format:
+Let's collect information about translated models. There are 2 database tables which are used to store translations on key-value backend - `mobility_string_translations` and `mobility_text_translations`. Those tables contain data in the following format:
 
 - `id` - record id
 - `locale` - locale of the translated string/text
@@ -39,7 +39,7 @@ Let's collect information about translated models. There are 2 database tables w
 - `translatable_type` and `translatable_id` - class and id of translated model, in code sample above it is `Tag` with some id
 - `created_at` and `updated_at` - timestamps
 
-Let's collect information about translated models
+Let's check which models actually use translations:
 
 ```
 app_dev=# select distinct translatable_type from mobility_string_translations;
@@ -100,7 +100,7 @@ ActiveRecord::Base.connection.execute("select * from mobility_text_translations"
 end
 ```
 
-Latest step - now you can drop unneccessary tables and columns
+Last step - now you can drop unnecessary tables and columns
 
 ```sh
 rails g migration DropMobilityTablesAndUnusedColumns
@@ -120,4 +120,4 @@ class DropMobilityTablesAndUnusedColumns < ActiveRecord::Migration[7.1]
 end
 ```
 
-Easy, huh? Hope this recipe will be useful for you.
+Easy, huh? I hope this recipe will be useful for you.

@@ -9,11 +9,11 @@ series:
   order: 1
 ---
 
-[Devise](https://github.com/heartcombo/devise) is an awesome gem to add authentication for your rails application, but it may me a bit overkill solution if you are going to develop REST or GraphQL API for your SPA or mobile application. Today I'll show you how to create GraphQL API without devise. I'll use some methods that [become available](https://rubyonrails.org/2023/9/13/Rails-7-1-0-beta-1-has-been-released) in **rails 7.1.0.beta1**, so please install this or higher version.
+[Devise](https://github.com/heartcombo/devise) is an awesome gem to add authentication for your rails application, but it may be a bit overkill solution if you are going to develop REST or GraphQL API for your SPA or mobile application. Today I'll show you how to create GraphQL API without devise. I'll use some methods that [become available](https://rubyonrails.org/2023/9/13/Rails-7-1-0-beta-1-has-been-released) in **rails 7.1.0.beta1**, so please install this or higher version.
 
 ## Project preparation
 
-Firstly, let's create our rails application. Of course - you can use an `--api` key to skip adding asset pipeline to your project, but I'll use basic template because I need [graphiql-rails](https://github.com/rmosolgo/graphiql-rails) gem.
+Firstly, let's create our rails application. Of course - you can use an `--api` key to skip adding the asset pipeline to your project, but I'll use a basic template because I need [graphiql-rails](https://github.com/rmosolgo/graphiql-rails) gem.
 
 ```bash
 rails new graphql_from_scratch --database=postgresql --skip-test --skip-system-test -j bun
@@ -24,7 +24,7 @@ rails db:create && rails db:migrate
 I prefer to use UUID, so I'll create the following migration with `rails g migration EnableUuidPsqlExtension`
 
 ```ruby
-class EnableUuidPsqlExtension < ActiveRecord::Migration[7.0]
+class EnableUuidPsqlExtension < ActiveRecord::Migration[7.1]
   def change
     enable_extension "pgcrypto"
     enable_extension "uuid-ossp"
@@ -178,7 +178,7 @@ rails g model User first_name last_name email password_digest
 then update our migration
 
 ```ruby
-class CreateUsers < ActiveRecord::Migration[7.0]
+class CreateUsers < ActiveRecord::Migration[7.1]
   def change
     create_table :users, id: :uuid do |t|
       t.string :first_name, null: false, default: ""
@@ -202,7 +202,7 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true, on: :update
   validates :last_name, presence: true, on: :update
-  validates :password, presence: {on: create}, length: {minimum: 8, maximum: 128}
+  validates :password, presence: {on: :create}, length: {minimum: 8, maximum: 128}
   validates :email, presence: true, uniqueness: {case_sensitive: false}, format: EMAIL_REGEXP
 
   normalizes :email, with: -> { _1.strip.downcase }
@@ -237,7 +237,7 @@ before_validation do
 end
 ```
 
-but now our code look more compact and readable.
+but now our code looks more compact and readable.
 
 Also, we need to create `UserType` for our API
 
@@ -315,7 +315,7 @@ module Mutations::Users
     field :user, Types::UserType, null: true
     field :errors, Types::ValidationErrorsType, null: true
 
-    def resolve(args)
+    def resolve(**args)
       user = User.new(args)
 
       if user.save
@@ -343,7 +343,7 @@ module Types
 end
 ```
 
-`app/graphql/types/validation_errors_type.rb` - This class is responsible for representing of error messages.
+`app/graphql/types/validation_errors_type.rb` - This class is responsible for representing error messages.
 
 ```ruby
 module Types
@@ -375,7 +375,7 @@ end
 
 ```
 
-I'd like to point you to `signed_in` method, which is used to create expiable token with token purpose, we will use it in several other methods.
+I'd like to point you to the `signed_id` method, which is used to create expiable token with token purpose, we will use it in several other methods.
 
 Also, we need to add UserMailer and related views.
 

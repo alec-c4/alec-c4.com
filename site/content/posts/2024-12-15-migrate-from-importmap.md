@@ -6,7 +6,7 @@ slug: 2024-12-15-migrate-from-importmap
 tags: ['ruby on rails', 'ruby', 'frontend']
 ---
 
-Importmap is a great tool, but unfortunately it isn't a silver bullet for everything. I decided to move away from importmap to esbuild for one of my projects because of it was so tricky to setup it to use with [flowbite](https://flowbite.com). Also, I'll migrate from [tailwindcss-rails](https://github.com/rails/tailwindcss-rails) to [cssbundling-rails](https://github.com/rails/cssbundling-rails) to make it consistent. Here's a guide how to perform this migration.
+Importmap is a great tool, but unfortunately it isn't a silver bullet for everything. I decided to move away from importmap to esbuild for one of my projects because it was so tricky to set it up to use with [flowbite](https://flowbite.com). Also, I'll migrate from [tailwindcss-rails](https://github.com/rails/tailwindcss-rails) to [cssbundling-rails](https://github.com/rails/cssbundling-rails) to make it consistent. Here's a guide on how to perform this migration.
 
 Firstly, let's update our `Gemfile`.
 
@@ -50,7 +50,7 @@ and of course we need `node` and `yarn` installed to run
 yarn install
 ```
 
-Don't forget to add other libraries you use in your project which is referenced in your `config.importmap.rb`. After that, you can simply remove this file. Next stop - javascript files. Let's update `app/javascript/application.js`:
+Don't forget to add other libraries you use in your project which are referenced in your `config.importmap.rb`. After that, you can simply remove this file. Next step - javascript files. Let's update `app/javascript/application.js`:
 
 ```diff
 - // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
@@ -85,12 +85,12 @@ Let's update layout `app/views/layouts/application.html.erb`
 ```diff
 -    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 -    <%= javascript_importmap_tags %>
-     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
 +    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
 +    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 ```
 
-Our next step is to do some updates for stylesheets. You can remove `app/assets/stylesheets/application.css`, but don't forget co copy your styles to `app/assets/stylesheets/application.tailwind.css` in case if you've added something. Then move `config/tailwind.config.js` to the project root. You may need to add missing tailwind plugins:
+Our next step is to do some updates for stylesheets. You can remove `app/assets/stylesheets/application.css`, but don't forget to copy your styles to `app/assets/stylesheets/application.tailwind.css` in case you've added something. Then move `config/tailwind.config.js` to the project root. You may need to add missing tailwind plugins:
 
 ```bash
 yarn add @tailwindcss/forms @tailwindcss/typography @tailwindcss/container-queries
@@ -105,7 +105,7 @@ Update `Procfile.dev` to add esbuild for JS and replace tailwind gem with node p
 + css: yarn build:css --watch
 ```
 
-Well, looks like we've done. Let's check our app with
+Well, looks like we're done. Let's check our app with
 
 ```bash
 bin/dev

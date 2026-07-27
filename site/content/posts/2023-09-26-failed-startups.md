@@ -1,12 +1,12 @@
 ---
 title: 'Failed startups and learned lessons'
-description: "This is the English version of an article I've written in 2016 and have published on Medium."
+description: 'This is the English version of an article I wrote in 2016 and published on Medium.'
 pubDate: 2023-09-26
 slug: 2023-09-26-failed-startups
 tags: ['startup', 'mvp']
 ---
 
-> This is the English version of an article I've written in 2016 and have [published](https://medium.com/angry-beard/навизионировал-убери-за-собой-a0ec6333f0dd) on Medium. I have moved it to the blog just to keep my eyes on it, but I hope you find this my post funny or useful.
+> This is the English version of an article I wrote in 2016 and [published](https://medium.com/angry-beard/навизионировал-убери-за-собой-a0ec6333f0dd) on Medium. I have moved it to the blog just to keep my eyes on it, but I hope you find this post funny or useful.
 
 I'm smart! No, not just smart. I'm freaking brilliant!!!
 
@@ -60,7 +60,7 @@ After some brainstorming, we came up with a way to boost sales. I even made prel
 
 ## Working Ninja
 
-Once upon a time I've decided to ditch the office and work wherever we pleased – coworking spaces, cafes, homes, you name it. And at some point, it occurred to me that having an app that could help you find a place to work in your current location would be pretty handy.
+Once upon a time I decided to ditch the office and work wherever we pleased – coworking spaces, cafes, homes, you name it. And at some point, it occurred to me that having an app that could help you find a place to work in your current location would be pretty handy.
 
 ![](/images/2023-09-26-failed-startups/4.webp)
 
@@ -68,7 +68,7 @@ I started talking to coworking spaces that might find this idea interesting, but
 
 ## Millimetrika
 
-On one fine, sunny day in a kingdom far, far away lived... No, I couldn't come up with a better phrase to start this paragraph, so enjoy what you've got. 😄 But enough about that – let me tell you about the project! The idea of a mobile client for Yandex.Metrica had been brewing in my mind for quite some time. It's a great service, but surprisingly, Yandex didn't seem to pay much attention to it from a product perspective, and they hadn't released a mobile client. Meanwhile, third-party developers had created alternative clients that were visually stunning but as convenient as a dresser as a vibrator (sorry, guys, I can't help but take a jab at "competitors"). We talked to colleagues and decided to create something more appealing (not everyone might have liked it, but Yandex did call our project the most beautiful mobile client for Yandex.Metrica, which gave us a glimmer of hope).
+On one fine, sunny day in a kingdom far, far away lived... No, I couldn't come up with a better phrase to start this paragraph, so enjoy what you've got. 😄 But enough about that – let me tell you about the project! The idea of a mobile client for Yandex.Metrica had been brewing in my mind for quite some time. It's a great service, but surprisingly, Yandex didn't seem to pay much attention to it from a product perspective, and they hadn't released a mobile client. Meanwhile, third-party developers had created alternative clients that were visually stunning but as convenient as a dresser is as a vibrator (sorry, guys, I can't help but take a jab at "competitors"). We talked to colleagues and decided to create something more appealing (not everyone might have liked it, but Yandex did call our project the most beautiful mobile client for Yandex.Metrica, which gave us a glimmer of hope).
 
 ![](/images/2023-09-26-failed-startups/5.webp)
 
