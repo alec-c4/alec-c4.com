@@ -15,6 +15,16 @@ With years of hands-on coding, leading teams, and building products from the gro
 
 ## Experience
 
+### MGKL (MosGorLombard) — Pawnshop Network 2026-2026
+
+**Head of digital transformation, CDTO**
+
+- Built the company’s digital transformation function from the ground up as a **hands-on, player-coach CDTO**, combining business transformation, product strategy, technology leadership, architecture, and hands-on development.
+- Conducted business and customer research and designed an internal **Master Data Management (MDM) platform** to consolidate and analyze customer data, creating a foundation for customer analytics, loyalty programs, and CRM marketing.
+- Personally designed the platform architecture and developed its initial version, validating the technology and core business use cases before scaling development through a dedicated team.
+- Built and led the digital transformation team, establishing product development and engineering processes and transitioning the initial hands-on implementation into a team-driven digital product.
+- Designed and implemented an internal technical documentation platform and introduced
+
 ### Deeplay LLC 2025 – 2025
 
 **Head of the Operational Software Department**
